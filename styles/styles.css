@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
+
+*,
+*:before,
+*:after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Lora', serif;
+}
+
+body {
+	background-color: #f8fffc;
+}
+
+#gridContainer {
+	display: grid;
+	grid-template-columns: 280px auto;
+	grid-template-rows: 50px auto;
+	grid-template-areas:
+		'header header'
+		'sidebar body';
+}
+
+#header {
+	position: fixed;
+	width: 100%;
+	height: 50px;
+	grid-area: header;
+	background-color: #3eb489;
+	color: white;
+}
+
+#banner {
+	margin: 5px 20px;
+}
+
+#sidebarSection {
+	position: fixed;
+	margin-top: 50px;
+	height: calc(100vh - 50px);
+	grid-area: sidebar;
+	background-color: #dff6ec;
+	border-right: 3px;
+	width: 280px;
+	border-right-style: solid;
+	border-right-color: #9adac2;
+	font-size: 1.05rem;
+}
+
+#timeSection {
+	display: flex;
+	flex-direction: column;
+	padding: 30px 10px;
+}
+
+#sectionDiv {
+	display: flex;
+	flex-direction: column;
+	padding: 30px 10px;
+}
+
+.sidebarItems {
+	text-align: center;
+	font-size: 1.1rem;
+	padding: 10px;
+	margin: 3px;
+	border: none;
+	background-color: #2f8767;
+	color: #dff6ec;
+	cursor: pointer;
+	border-radius: 3px;
+}
+
+#sectionDiv > p {
+	font-size: 1.2rem;
+	padding-left: 20px;
+	padding-bottom: 10px;
+	border-bottom: 2px solid black;
+	margin-bottom: 10px;
+}
+
+#bodySection {
+	grid-area: body;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* overflow: auto; */
+	padding: 40px;
+}
+
+#bodyTable {
+	width: 900px;
+	margin-top: 30px;
+}
+
+.tableRow {
+	padding: 10px 10px;
+}
+
+#complete {
+	height: 15px;
+	width: 15px;
+}
+
+#addNoteBtn {
+	border: none;
+	background: none;
+	cursor: pointer;
+}
+
+#addImg {
+	height: 16px;
+	width: 16px;
+}
+
+#addItemDiv {
+	padding: 20px;
+	background-color: #9adac2;
+	border-radius: 3px;
+	width: 500px;
+}
+
+#addItemForm {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.formInput {
+	border: 1px solid black;
+	width: 450px;
+	height: 27px;
+	margin: 5px;
+	border-radius: 3px;
+}
+
+#imptBoxDiv {
+	margin: 5px;
+}
+
+#submitBtn {
+	margin: 5px;
+	border: none;
+	background-color: #2f8767;
+	font-size: 1rem;
+	padding: 8px;
+	color: #dff6ec;
+}
+
+.greyHighlight {
+	color: #9adac2;
+}
+
+.redHighlight {
+	color: #ee204d;
+}

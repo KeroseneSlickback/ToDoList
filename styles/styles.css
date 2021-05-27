@@ -15,7 +15,7 @@ body {
 
 #gridContainer {
 	display: grid;
-	grid-template-columns: 280px auto;
+	grid-template-columns: 350px auto;
 	grid-template-rows: 50px auto;
 	grid-template-areas:
 		'header header'
@@ -42,7 +42,7 @@ body {
 	grid-area: sidebar;
 	background-color: #dff6ec;
 	border-right: 3px;
-	width: 280px;
+	width: 350px;
 	border-right-style: solid;
 	border-right-color: #9adac2;
 	font-size: 1.05rem;
@@ -86,7 +86,6 @@ body {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	/* overflow: auto; */
 	padding: 40px;
 }
 
@@ -127,38 +126,19 @@ body {
 .importantTaskBtn {
 	background-color: #ee204d;
 }
-/* #bodyTable {
-	width: 900px;
-	margin-top: 30px;
-}
-
-.tableRow {
-	padding: 10px 10px;
-}
-
-#complete {
-	height: 15px;
-	width: 15px;
-}
-
-#addNoteBtn {
-	border: none;
-	background: none;
-	cursor: pointer;
-}
-
-#addImg {
-	background-color: #9adac2;
-	border-radius: 3px;
-	padding: 5px;
-} */
 
 #addItemDiv {
 	margin: 20px;
-	padding: 20px;
+	padding: 15px;
 	background-color: #9adac2;
 	border-radius: 3px;
-	width: 500px;
+}
+
+#newTaskHeader {
+	background-color: #2f8767;
+	color: white;
+	padding: 8px;
+	border-radius: 3px;
 }
 
 #addItemForm {
@@ -172,16 +152,16 @@ body {
 	border: 1px solid black;
 	width: 100%;
 	height: 27px;
-	margin: 5px;
+	margin-top: 10px;
 	border-radius: 3px;
 }
 
 #imptBoxDiv {
-	margin: 5px;
+	margin-top: 10px;
 }
 
 #submitBtn {
-	margin: 5px;
+	margin-top: 10px;
 	border: none;
 	background-color: #2f8767;
 	font-size: 1rem;

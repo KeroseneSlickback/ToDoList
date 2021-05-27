@@ -15,19 +15,9 @@
     </div>
   </header>
   <section id="sidebarSection">
-      <div id="sectionDiv">
-        <p>Sections</p>
-        <button id="sortAll" type="button" class="sidebarItems">All</button>
-        <button id="sortWork" type="button" class="sidebarItems">Work</button>
-        <button id="sortStudy" type="button" class="sidebarItems">Study</button>
-        <button id="sortFree" type="button" class="sidebarItems">Freetime</button>
-      </div>
-  </section>
-  <section id="bodySection">
-      <div id="bodyTop">
-    </div>
-        <div id="addItemDiv">
+      <div id="addItemDiv">
           <form id="addItemForm" action="/" method="POST">
+            <p id="newTaskHeader">New Task</p>
             <input class="formInput" id="task" type="text" name="task" placeholder="Task">
             <input class="formInput" id="info" type="text" name="info" placeholder="Description...">
             <select class="formInput" name="section" id="section" placeholder="Select a section...">
@@ -44,6 +34,10 @@
             <button id="submitBtn" type="submit">Submit</button>
           </form>
       </div>
+  </section>
+  <section id="bodySection">
+    <div id="bodyTop">
+    </div>
   </section>
 </div>
   <script src="main.js"></script>

@@ -103,13 +103,4 @@ newTask.addEventListener('submit', e => {
 	newTask.reset();
 });
 
-const sortAll = document.getElementById('sortAll');
-sortAll.addEventListener('click', () => {});
-const sortWork = document.getElementById('sortWork');
-sortWork.addEventListener('click', () => {});
-const sortStudy = document.getElementById('sortStudy');
-sortStudy.addEventListener('click', () => {});
-const sortFree = document.getElementById('sortFree');
-sortFree.addEventListener('click', () => {});
-
 totalApply();

@@ -15,58 +15,35 @@
     </div>
   </header>
   <section id="sidebarSection">
-      <div id="timeSection">
-        <button type="button" id="today" class="sidebarItems">Today</button>
-        <button type="button" id="nextSeven" class="sidebarItems">Next 7 Days</button>
-        <button type="button" id="thisMonth" class="sidebarItems">This Month</button>
-      </div>
       <div id="sectionDiv">
         <p>Sections</p>
-        <button type="button" class="sidebarItems">Work</button>
-        <button type="button" class="sidebarItems">Study</button>
-        <button type="button" class="sidebarItems">Freetime</button>
+        <button id="sortAll" type="button" class="sidebarItems">All</button>
+        <button id="sortWork" type="button" class="sidebarItems">Work</button>
+        <button id="sortStudy" type="button" class="sidebarItems">Study</button>
+        <button id="sortFree" type="button" class="sidebarItems">Freetime</button>
       </div>
   </section>
   <section id="bodySection">
-    <div id="bodyTop">
-      <h1 id="bodyDate">Today</h1>
-      <table id="bodyTable">
-        <tr>
-          <td class="tableRow completeSection"><input class="completeBox" type="checkbox" id="complete" name="complete"></td>
-          <td class="tableRow"><p>Write long article for some bitch ass client.</p></td>
-          <td class="tableRow"><p>Work</p></td>
-          <td class="tableRow greyHighlight"><p>Important</p></td>
-        </tr>
-        <tr>
-          <td class="tableRow completeSection"><input class="completeBox" type="checkbox" id="complete" name="complete"></td>
-          <td class="tableRow"><p>Program for 3 hours.</p></td>
-          <td class="tableRow"><p>Study</p></td>
-          <td class="tableRow redHighlight"><p>Important</p></td>
-        </tr>
-        <tr>
-          <td class="tableRow completeSection"><input class="completeBox" type="checkbox" id="complete" name="complete"></td>
-          <td class="tableRow"><p>Offer the gods the blood of virgin programmers who only worked in Javascript.</p></td>
-          <td class="tableRow"><p>Freetime</p></td>
-          <td class="tableRow"><p>Important</p></td>
-        </tr>
-        <tr id="addNote">
-          <td class="tableRow completeSection"><button id="addNoteBtn" type="button"><img id="addImg" src="../img/plus.png"></button></td>
-          <td class="tableRow"><p>Add note...</p></td>
-        </tr>
-      </table>
+      <div id="bodyTop">
+    </div>
         <div id="addItemDiv">
-          <form id="addItemForm" action="/" method="GET">
-            <input class="formInput" id="newTaskTitle" type="text" name="title" placeholder="Task Name">
-            <input class="formInput" id="newTaskInfo" type="text" name="info" placeholder="Enter detailed information here">
-            <input class="formInput" id="newTaskSection" type="text" name="section" placeholder="Enter a section">
+          <form id="addItemForm" action="/" method="POST">
+            <input class="formInput" id="task" type="text" name="task" placeholder="Task">
+            <input class="formInput" id="info" type="text" name="info" placeholder="Description...">
+            <select class="formInput" name="section" id="section" placeholder="Select a section...">
+              <option value="" disabled selected>Select a section...</option>
+              <option value="Work">Work</option>
+              <option value="Study">Study</option>
+              <option value="Freetime">Freetime</option>
+            </select>
+            <input class="formInput" id="date" type="date" name="date">
             <div id="imptBoxDiv">
               <input type="checkbox" id="important" name="important">
               <label for="important">Important?</label>
             </div>
             <button id="submitBtn" type="submit">Submit</button>
           </form>
-        </div>
-    </div>
+      </div>
   </section>
 </div>
   <script src="main.js"></script>
